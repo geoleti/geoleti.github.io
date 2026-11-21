@@ -1,0 +1,69 @@
+- id: geodata
+  nombre: "GeoData"
+  subtitulo: "Visualizaciones geográficas"
+  descripcion: "Mapas y aplicaciones para explorar información territorial, con especial atención a la accesibilidad aeroportuaria y el transporte."
+  categoria: "WebSIG"
+  visual: "visual-geodata"
+  numero: "01"
+  etiquetas: ["SIG", "Accesibilidad", "Mapas web"]
+  enlace: "https://geoleti.github.io/geodata/"
+  repositorio: "https://github.com/geoleti/geodata"
+  accion: "Explorar sitio"
+  estado: "Proyecto web"
+  destacado: true
+
+- id: maravillas
+  nombre: "Maravillas de Argentina"
+  subtitulo: "Exploración visual del territorio"
+  descripcion: "Una experiencia para descubrir paisajes y lugares de Argentina mediante panorámicas integradas y destinos elegidos al azar."
+  categoria: "WebSIG"
+  visual: "visual-maravillas"
+  numero: "02"
+  etiquetas: ["Argentina", "Street View", "Web"]
+  enlace: "https://geoleti.github.io/maravillasdeargentina/"
+  repositorio: "https://github.com/geoleti/maravillasdeargentina"
+  accion: "Visitar experiencia"
+  estado: "Proyecto web"
+  destacado: true
+
+- id: cfi
+  nombre: "Cartografía provincial"
+  subtitulo: "Mapas de logística e infraestructura"
+  descripcion: "Desarrollo de cartografía temática y logística a escala provincial, con capas de transporte, infraestructura y contexto territorial."
+  categoria: "Cartografía"
+  visual: "visual-cfi"
+  numero: "03"
+  etiquetas: ["QGIS", "Logística", "Cartografía"]
+  enlace: "https://github.com/geoleti/CFI"
+  repositorio: "https://github.com/geoleti/CFI"
+  accion: "Ver repositorio"
+  estado: "En desarrollo"
+  destacado: true
+
+- id: siac
+  nombre: "Modelo de datos SIAC"
+  subtitulo: "Arquitectura y documentación de datos"
+  descripcion: "Documentación técnica del pasaje de un modelo de Power BI a PostgreSQL/PostGIS para consultas y análisis de información aerocomercial."
+  categoria: "Datos"
+  visual: "visual-siac"
+  numero: "04"
+  etiquetas: ["PostGIS", "Power BI", "Python"]
+  enlace: "https://github.com/geoleti/Modelo-de-datos"
+  repositorio: "https://github.com/geoleti/Modelo-de-datos"
+  accion: "Ver documentación"
+  estado: "Implementación parcial"
+  destacado: true
+
+- id: ais
+  nombre: "AIS Paraná"
+  subtitulo: "Datos y cartografía fluvial"
+  descripcion: "Experimento de visualización de información AIS sobre el corredor del Paraná, desarrollado como una aplicación web geográfica."
+  categoria: "WebSIG"
+  visual: "visual-ais"
+  numero: "05"
+  etiquetas: ["AIS", "Río Paraná", "Web"]
+  enlace: "https://github.com/geoleti/ais-parana-map"
+  repositorio: "https://github.com/geoleti/ais-parana-map"
+  accion: "Ver repositorio"
+  estado: "Prototipo"
+  destacado: false

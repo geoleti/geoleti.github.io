@@ -1,0 +1,24 @@
+---
+layout: default
+title: Proyectos
+description: "Proyectos SIG, cartografía, mapas interactivos y análisis de datos."
+permalink: /proyectos/
+---
+<section class="page-hero"><div class="container"><p class="kicker">EXPLORAR / ARCHIVO</p><h1>Proyectos<span class="period">.</span></h1><p>Una selección de aplicaciones geográficas, cartografía temática y trabajos de modelado de datos. Cada proyecto conserva su propio repositorio.</p></div></section>
+<section class="all-projects"><div class="container">
+  <div class="filters" role="group" aria-label="Filtrar proyectos por categoría">
+    <button type="button" class="filter-button" data-filter="Todos" aria-pressed="true">Todos</button>
+    <button type="button" class="filter-button" data-filter="WebSIG" aria-pressed="false">WebSIG</button>
+    <button type="button" class="filter-button" data-filter="Cartografía" aria-pressed="false">Cartografía</button>
+    <button type="button" class="filter-button" data-filter="Datos" aria-pressed="false">Datos</button>
+  </div>
+  <p class="filter-count" id="project-count">{{ site.data.proyectos | size }} proyectos</p>
+  <div class="project-grid">
+    {% for proyecto in site.data.proyectos %}
+    <article class="project-card" data-category="{{ proyecto.categoria }}">
+      <div class="project-visual {{ proyecto.visual }}" aria-hidden="true"><div class="visual-grid"></div><span class="visual-index">{{ proyecto.numero }} / 05</span><span class="visual-symbol">{% if proyecto.id == 'geodata' %}◎{% elsif proyecto.id == 'maravillas' %}◇{% elsif proyecto.id == 'cfi' %}⌁{% elsif proyecto.id == 'siac' %}▦{% else %}≈{% endif %}</span><span class="visual-caption">{{ proyecto.categoria | upcase }}</span></div>
+      <div class="project-body"><div class="project-topline"><span>{{ proyecto.categoria }}</span><span>{{ proyecto.estado }}</span></div><h3>{{ proyecto.nombre }}</h3><p class="project-subtitle">{{ proyecto.subtitulo }}</p><p class="project-description">{{ proyecto.descripcion }}</p><div class="tag-list">{% for tag in proyecto.etiquetas %}<span>{{ tag }}</span>{% endfor %}</div><div class="project-links"><a href="{{ proyecto.enlace }}" target="_blank" rel="noopener noreferrer">{{ proyecto.accion }} <span aria-hidden="true">↗</span></a><a href="{{ proyecto.repositorio }}" target="_blank" rel="noopener noreferrer" class="secondary-project-link" aria-label="Código de {{ proyecto.nombre }}">Código</a></div></div>
+    </article>
+    {% endfor %}
+  </div>
+</div></section>

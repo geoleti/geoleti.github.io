@@ -1,0 +1,13 @@
+title: "GeoLeti | Geografía, datos y territorio"
+description: "Portfolio de cartografía, SIG, análisis de transporte y proyectos de datos de Leticia Dall’Ospedale."
+url: "https://geoleti.github.io"
+baseurl: ""
+lang: es-AR
+timezone: America/Argentina/Buenos_Aires
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
